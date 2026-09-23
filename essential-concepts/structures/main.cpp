@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 
 
 struct Rectangle {
@@ -12,10 +13,17 @@ struct Complex {
 };
 
 struct Student {
-    char school[25];
-    char name[25];
-    char depart[15];
+    std::string school;
+    std::string name;
+    std::string depart;
     int age;
+};
+
+struct Card {
+    // map ints to hash map with the names of each value
+    int face;
+    int shape;
+    int colour;
 };
 
 int main() {
